@@ -7,7 +7,7 @@ var axios = require("axios");
 // Takes in all of the command line arguments
 var inputString = process.argv;
 
-// Parses the command line argument to capture the "operand" (add, subtract, multiply, etc) and the numbers
+// Parses the command line argument to capture the "operand"
 var operand = inputString[2];
 var userInput = inputString[3];
 console.log(operand);
@@ -23,13 +23,13 @@ if (operand == "movie-this") {
       // Then log the body from the site
       console.log(response.data.Title);
       console.log(response.data.Year);
-      //console.log(response.data.imdbRatings);
+      console.log(response.data.movieInfo.imdbRating);
       //console.log(response.data.Ratings."Rotten Tomatoes");
       console.log(response.data.Country);
       console.log(response.data.Language);
       console.log(response.data.Plot);
       console.log(response.data.Actors);
-      //   add additional requirements
+      //   add  requirements
     });
 } else if (operand == "concert-this") {
   //   insert concert-this logic api
