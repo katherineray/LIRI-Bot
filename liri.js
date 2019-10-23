@@ -23,13 +23,13 @@ if (operand == "movie-this") {
       // Then log the body from the site
       console.log(response.data.Title);
       console.log(response.data.Year);
-      console.log(response.data.movieInfo.imdbRating);
+      //console.log(response.data.IMDBRatings);
       //console.log(response.data.Ratings."Rotten Tomatoes");
       console.log(response.data.Country);
       console.log(response.data.Language);
       console.log(response.data.Plot);
       console.log(response.data.Actors);
-      //   add  requirements
+      //   add additional requirements
     });
 } else if (operand == "concert-this") {
   //   insert concert-this logic api
